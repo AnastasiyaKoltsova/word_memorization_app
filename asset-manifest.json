@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/word_memorization_app/static/css/main.31d6cfe0.css",
+    "main.js": "/word_memorization_app/static/js/main.cff4e363.js",
+    "static/js/787.004baebd.chunk.js": "/word_memorization_app/static/js/787.004baebd.chunk.js",
+    "index.html": "/word_memorization_app/index.html",
+    "main.cff4e363.js.map": "/word_memorization_app/static/js/main.cff4e363.js.map",
+    "787.004baebd.chunk.js.map": "/word_memorization_app/static/js/787.004baebd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.cff4e363.js"
+  ]
+}
