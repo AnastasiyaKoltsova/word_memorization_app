@@ -1,0 +1,10 @@
+.container {
+    padding: 3%;
+    color: #2e3856;
+}
+
+.buttons {
+    display: flex;
+    gap: 5%;
+    margin-bottom: 5%;
+}

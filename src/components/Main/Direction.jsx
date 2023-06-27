@@ -1,24 +1,25 @@
-import TableProperties from "./TableProperties";
-import WordProperties from "./WordProperties";
+import Button from './Button';
+import Table from './Table/Table';
+import styles from './Direction.module.css';
+import BtnAddWords from './Table/BtnAddWords';
 
 function Direction() {
     return (
-        <div>
+        <div className={styles.container}>
             <h2>Название папки</h2>
-            <div>
-                <button>Все карточки</button>
-                <button>Учить</button>
-                <button>Повторить</button>
-                <button>Изучено</button>
+            <div className={styles.buttons}>
+                <Button>Все карточки</Button>
+                <Button>Учить</Button>
+                <Button>Повторить</Button>
+                <Button>Изучено</Button>
             </div>
             <section>
                 <h3>Список слов</h3>
                 <div>
-                    <TableProperties></TableProperties>
-                    <WordProperties></WordProperties>
+                    <Table></Table>
                 </div>
                 <div>
-                    <button>Добавить или удалить слова</button>
+                    <BtnAddWords></BtnAddWords>
                 </div>
             </section>
         </div>

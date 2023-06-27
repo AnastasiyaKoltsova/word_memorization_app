@@ -1,0 +1,13 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    align-items: center;
+    background-color: #fff;
+    padding: 3%;
+}
+
+.appTitle {
+    color: #e6073f;
+    font-weight: 800;
+    font-size: 2rem;
+}
