@@ -1,10 +1,10 @@
 import styles from './Button.module.css';
 
-function Button() {
+function Button(props) {
     return (
         <div>
             <button className={styles.button}>
-                Все карточки
+                { props.title }
             </button>
         </div>
     );

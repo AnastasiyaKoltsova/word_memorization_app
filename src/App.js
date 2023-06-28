@@ -1,17 +1,23 @@
 import Header from './components/Header/Header';
-// import StartPage from './components/Main/StartPage';
-import Direction from './components/Main/Direction';
+import StartPage from './components/Main/StartPage/StartPage';
+import Direction from './components/Main/InDirection/Direction';
 import Footer from './components/Footer/Footer';
 import styles from './App.module.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className={styles.container}>
-      <Header></Header>
-      {/* <StartPage></StartPage> */}
-      <Direction></Direction>
-      <Footer></Footer>
-    </div>
+    <BrowserRouter>
+      <div className={styles.container}>
+        <Header></Header>
+        <Routes>
+          <Route path='/startPage' element={<StartPage />} />
+          <Route path='/direction' element={<Direction />} />
+        </Routes>
+        <Footer></Footer>
+      </div>
+    </BrowserRouter>
+    
   );
 }
 
