@@ -4,7 +4,7 @@ import Table from './Table/Table';
 import styles from './Direction.module.css';
 import BtnAddWords from './Table/BtnAddWords';
 
-function Direction() {
+function Direction(props) {
     return (
         <div className={styles.container}>
             <div>
@@ -20,7 +20,7 @@ function Direction() {
             <section>
                 <h3>Список слов</h3>
                 <div>
-                    <Table></Table>
+                    <Table words={props.words}></Table>
                 </div>
                 <div>
                     <BtnAddWords></BtnAddWords>

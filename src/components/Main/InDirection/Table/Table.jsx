@@ -1,7 +1,20 @@
 // import ButtonTable from './ButtonTable';
 import styles from './Table.module.css';
 
-function Table() {
+function Table(props) {
+    let wordsElements = props.words.map((word) => (
+        <tr>
+            <td>{props.words.indexOf(word) + 1}</td>
+            <td>{word.english}</td>
+            <td>{word.transcription}</td>
+            <td>{word.russian}</td>
+            <td>{word.tags}</td>
+            <td>
+                <button>Настройки</button>
+            </td>
+        </tr>
+    ));
+    
     return (
         <div className={styles.container}>
             <table>
@@ -16,40 +29,7 @@ function Table() {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Apple</td>
-                        <td>ˈæpl</td>
-                        <td>Яблоко</td>
-                        <td>Фрукты</td>
-                        <td>
-                            <button>Настройки</button>
-                            {/* <ButtonTable></ButtonTable> */}
-                        </td>
-                        
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Apple</td>
-                        <td>ˈæpl</td>
-                        <td>Яблоко</td>
-                        <td>Фрукты</td>
-                        <td>
-                            <button>Настройки</button>
-                        </td>
-                        
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Apple</td>
-                        <td>ˈæpl</td>
-                        <td>Яблоко</td>
-                        <td>Фрукты</td>
-                        <td>
-                            <button>Настройки</button>
-                        </td>
-                        
-                    </tr>
+                    { wordsElements }
                 </tbody>
             </table>
         </div>
