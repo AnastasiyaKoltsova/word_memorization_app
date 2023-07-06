@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import Button from '../CommonComponents/Button';
-import Table from './Table/Table';
+import Table from './ListOfWords/Table';
 import styles from './Direction.module.css';
-import BtnAddWords from './Table/BtnAddWords';
+import BtnAddWords from './ListOfWords/BtnAddWords';
 
 function Direction(props) {
     return (

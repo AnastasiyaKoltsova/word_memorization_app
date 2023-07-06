@@ -53,3 +53,27 @@ tbody tr:nth-child(even) {
 table {
     background-color: #F9DC5C;
 }
+
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.Btn {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    padding: 5%;
+    cursor: pointer;
+}
+
+.BtnEdit {
+    background-color: #F9DC5C;
+}
+
+.BtnDelete {
+    background-color: #ED254E;
+}

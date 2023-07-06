@@ -10,7 +10,10 @@ function Table(props) {
             <td>{word.russian}</td>
             <td>{word.tags}</td>
             <td>
-                <button>Настройки</button>
+                <div className={styles.buttonsContainer}>
+                    <button className={`${styles.Btn} ${styles.BtnEdit}`}>Edit</button>
+                    <button className={`${styles.Btn} ${styles.BtnDelete}`}>Delete</button>
+                </div>
             </td>
         </tr>
     ));
