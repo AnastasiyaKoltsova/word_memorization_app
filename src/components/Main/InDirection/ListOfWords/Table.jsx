@@ -1,21 +1,34 @@
-import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
 import styles from './Table.module.css';
-import BtnEditWord from './BtnEditWord';
+import TableRow from './TableRow';
 
 const Table = (props) => {
+
+    const [editableRowIndex, setEditableRowIndex] = useState(-1);
+
+    const startEditing = (index) => {
+        setEditableRowIndex(index);
+    };
+
+    const saveEditHandler = () => {
+        console.log('Изменения в карточке слова');
+        setEditableRowIndex(-1);
+    };
+
+    const cancelEditHandler = () => {
+        setEditableRowIndex(-1);
+    };
     
-    let wordsElements = props.words.map((word) => (
-        <tr key={word.id}>
-            <td>{props.words.indexOf(word) + 1}</td>
-            {/* <td><NavLink to={`/card/${word.id}`} key={word.id}>{word.english}</NavLink></td> */}
-            <td><NavLink to={`/card`}>{word.english}</NavLink></td>
-            <td>{word.transcription}</td>
-            <td>{word.russian}</td>
-            <td>{word.tags}</td>
-            <td>
-                <BtnEditWord />
-            </td>
-        </tr>
+    let wordsElements = props.words.map((word, index) => (
+        <TableRow
+            key={word.id}
+            word={word}
+            index={index}
+            editableRowIndex={editableRowIndex}
+            startEditing={startEditing}
+            saveEditHandler={saveEditHandler}
+            cancelEditHandler={cancelEditHandler}
+        />
     ));
     
     return (
