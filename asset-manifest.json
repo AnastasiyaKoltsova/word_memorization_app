@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/word_memorization_app/static/css/main.58d9da70.css",
-    "main.js": "/word_memorization_app/static/js/main.fd7d64b7.js",
+    "main.css": "/word_memorization_app/static/css/main.5c28921b.css",
+    "main.js": "/word_memorization_app/static/js/main.35ef296f.js",
     "static/media/Montserrat-Regular.ttf": "/word_memorization_app/static/media/Montserrat-Regular.ceb11275ab638627a643.ttf",
     "index.html": "/word_memorization_app/index.html",
-    "main.58d9da70.css.map": "/word_memorization_app/static/css/main.58d9da70.css.map",
-    "main.fd7d64b7.js.map": "/word_memorization_app/static/js/main.fd7d64b7.js.map"
+    "main.5c28921b.css.map": "/word_memorization_app/static/css/main.5c28921b.css.map",
+    "main.35ef296f.js.map": "/word_memorization_app/static/js/main.35ef296f.js.map"
   },
   "entrypoints": [
-    "static/css/main.58d9da70.css",
-    "static/js/main.fd7d64b7.js"
+    "static/css/main.5c28921b.css",
+    "static/js/main.35ef296f.js"
   ]
 }
