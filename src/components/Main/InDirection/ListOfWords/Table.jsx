@@ -1,19 +1,19 @@
-// import ButtonTable from './ButtonTable';
+import { NavLink } from 'react-router-dom';
 import styles from './Table.module.css';
+import BtnEditWord from './BtnEditWord';
 
-function Table(props) {
+const Table = (props) => {
+    
     let wordsElements = props.words.map((word) => (
-        <tr>
+        <tr key={word.id}>
             <td>{props.words.indexOf(word) + 1}</td>
-            <td>{word.english}</td>
+            {/* <td><NavLink to={`/card/${word.id}`} key={word.id}>{word.english}</NavLink></td> */}
+            <td><NavLink to={`/card`}>{word.english}</NavLink></td>
             <td>{word.transcription}</td>
             <td>{word.russian}</td>
             <td>{word.tags}</td>
             <td>
-                <div className={styles.buttonsContainer}>
-                    <button className={`${styles.Btn} ${styles.BtnEdit}`}>Edit</button>
-                    <button className={`${styles.Btn} ${styles.BtnDelete}`}>Delete</button>
-                </div>
+                <BtnEditWord />
             </td>
         </tr>
     ));

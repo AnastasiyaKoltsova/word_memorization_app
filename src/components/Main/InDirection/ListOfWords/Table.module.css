@@ -69,11 +69,3 @@ table {
     padding: 5%;
     cursor: pointer;
 }
-
-.BtnEdit {
-    background-color: #F9DC5C;
-}
-
-.BtnDelete {
-    background-color: #ED254E;
-}

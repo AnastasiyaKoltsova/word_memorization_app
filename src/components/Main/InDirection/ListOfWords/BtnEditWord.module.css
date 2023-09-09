@@ -1,0 +1,32 @@
+.buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+}
+
+.Btn {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    padding: 5%;
+    cursor: pointer;
+}
+
+.BtnEdit {
+    background-color: #F9DC5C;
+}
+
+.BtnDelete {
+    background-color: #ED254E;
+}
+
+.BtnSave {
+    background-color: #57d74e;
+}
+
+.BtnCancel {
+    background-color: #465362;
+}

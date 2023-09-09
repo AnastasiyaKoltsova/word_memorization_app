@@ -4,7 +4,7 @@ import Table from './ListOfWords/Table';
 import styles from './Direction.module.css';
 import BtnAddWords from './ListOfWords/BtnAddWords';
 
-function Direction(props) {
+const Direction = (props) => {
     return (
         <div className={styles.container}>
             <div>
