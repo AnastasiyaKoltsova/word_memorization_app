@@ -2,9 +2,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
 import StartPage from './components/Main/StartPage/StartPage';
 import Direction from './components/Main/InDirection/Direction';
-import Card from './components/Main/InDirection/CardOfWord/Card';
+// import Card from './components/Main/InDirection/CardOfWord/Card';
 import Footer from './components/Footer/Footer';
 import styles from './App.module.css';
+import ShowWord from './components/Main/InDirection/CardOfWord/ShowWord';
 
 const App = (props) => {
   return (
@@ -15,7 +16,7 @@ const App = (props) => {
           <Route path='*' element={<StartPage />} />
           <Route path='/direction' element={<Direction words={props.words} />} />
           {/* <Route path='/card/:id' element={<Card words={props.words} />} /> */}
-          <Route path='/card' element={<Card words={props.words} />} />
+          <Route path='/card' element={<ShowWord words={props.words} />} />
         </Routes>
         <Footer></Footer>
       </div>
