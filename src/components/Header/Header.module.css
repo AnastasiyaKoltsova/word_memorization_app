@@ -1,9 +1,25 @@
 .container {
-    display: grid;
-    grid-template-columns: 1fr 10fr;
-    align-items: center;
     background-color: #fff;
-    padding: 3%;
+    padding: 2% 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+}
+
+.logoWrapper {
+    display: flex;
+    align-items: center;
+    /* gap: 1vw; */
+    max-height: 1vh;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: scale-down;
 }
 
 .appTitle {
@@ -11,4 +27,18 @@
     font-weight: 800;
     font-size: 2rem;
     white-space: nowrap;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
 }

@@ -11,3 +11,15 @@ a:hover {
     padding: 3%;
     color: #2e3856;
 }
+
+.directionRow {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+
+    padding: 2%;
+}
+
+.directionLogo {
+    max-width: 40px;
+}

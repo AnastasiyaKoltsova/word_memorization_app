@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import styles from './StartPage.module.css';
+import directionLogo from './../../../assets/icons/dir-logo.png';
 
 function StartPage() {
     return (
@@ -10,12 +11,10 @@ function StartPage() {
                     <thead></thead>
                     <tbody>
                         <tr>
-                            <td>
-                                {/* <img src="./../../assets/icons/dir-logo.png" alt="Иконка папки"></img> */}
-                            </td>
-                            <td><NavLink to='/direction'>Мои первые слова</NavLink></td>
-                            <td>
-                                Кнопка настройки
+                            <td className={styles.directionRow}>
+                                {/* <img src={directionLogo} alt="Иконка папки" className={styles.directionLogo}></img> */}
+                                <NavLink to='/direction'>Мои первые слова</NavLink>
+                                <button>Кнопка настройки</button>
                             </td>
                         </tr>
                     </tbody>
