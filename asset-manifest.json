@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/word_memorization_app/static/css/main.179465cd.css",
-    "main.js": "/word_memorization_app/static/js/main.02c27a26.js",
+    "main.css": "/word_memorization_app/static/css/main.ab354147.css",
+    "main.js": "/word_memorization_app/static/js/main.478b7542.js",
     "static/media/Montserrat-Regular.ttf": "/word_memorization_app/static/media/Montserrat-Regular.ceb11275ab638627a643.ttf",
+    "static/media/favicon.png": "/word_memorization_app/static/media/favicon.cec57c4c8207f35e9951.png",
+    "static/media/error-404.png": "/word_memorization_app/static/media/error-404.114cc84c318964a05126.png",
     "index.html": "/word_memorization_app/index.html",
-    "main.179465cd.css.map": "/word_memorization_app/static/css/main.179465cd.css.map",
-    "main.02c27a26.js.map": "/word_memorization_app/static/js/main.02c27a26.js.map"
+    "main.ab354147.css.map": "/word_memorization_app/static/css/main.ab354147.css.map",
+    "main.478b7542.js.map": "/word_memorization_app/static/js/main.478b7542.js.map"
   },
   "entrypoints": [
-    "static/css/main.179465cd.css",
-    "static/js/main.02c27a26.js"
+    "static/css/main.ab354147.css",
+    "static/js/main.478b7542.js"
   ]
 }
