@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import styles from './StartPage.module.css';
-import directionLogo from './../../../assets/icons/dir-logo.png';
+// import directionLogo from './../../../assets/icons/dir-logo.png';
 
 function StartPage() {
     return (
